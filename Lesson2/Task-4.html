@@ -15,8 +15,8 @@
         let lengthInCentimeters = parseFloat(prompt("Введіть довжину у сантиметрах",0));
         
         //Підраховуємо результат
-        let lengthInMeters = (lengthInCentimeters / 100).toFixed(2);
-        let lengthInKilometers = (lengthInMeters / 1000).toFixed(5);
+        let lengthInMeters = (lengthInCentimeters / 100);
+        let lengthInKilometers = (lengthInMeters / 1000);
         
         //Виводимо результат
         // console.log(lengthInCentimeters);
@@ -24,8 +24,8 @@
         // console.log(lengthInKilometers);
         document.write(`
         <p style="color:blue;">Довжина у сантиметрах = ${lengthInCentimeters}</p>
-        <p>${lengthInCentimeters} см = ${lengthInMeters} м</p>
-        <p>${lengthInCentimeters} см = ${lengthInKilometers} км</p>`)
+        <p>${lengthInCentimeters} см = ${lengthInMeters.toFixed(2)} м</p>
+        <p>${lengthInCentimeters} см = ${lengthInKilometers.toFixed(5)} км</p>`)
     </script>
 </body>
 </html>
