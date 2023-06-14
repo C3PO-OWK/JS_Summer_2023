@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3. Task 5</title>
+</head>
+<body>
+	<h1>Задача 5</h1>
+    <script>
+        //Задача 5. З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+        let driverLicence = prompt("Введіть вашу категорію водія: A, B, C (Використовуйте англ мову для введення вашої категорії");
+        let category;
+
+        //Розв"язок заадачі
+        switch (driverLicence) {
+            case 'A':
+                category = 'Категорія А - Мотоцикл'
+                break;
+            case 'B':
+                category = 'Категорія B - Легковий автомобіль'
+                break;
+            case 'C':
+                category = 'Категорія C - Вантажний автомобіль'
+                break;
+            default:
+                category = 'Невідома категорія водійського посвідчення'
+                break;
+        }
+        alert(category)
+    </script>
+</body>
+</html>

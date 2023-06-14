@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3. Task 2</title>
+</head>
+<body>
+	<h1>Задача 2</h1>
+    <script>
+        //Задача 2. З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+        //Вводимо позначення
+        let productPrice = parseFloat(prompt("Введіть ціну товара",0));
+        let buyersMoney = parseFloat(prompt("Введіть кількість грошей у покупця",0));
+        const ticketPrice = 4;
+        
+        //Розв"язок заадачі
+        if (buyersMoney >= productPrice + ticketPrice) {
+        if(confirm("Придбайте лотерейний квиток за 4 грн"))  alert ("Дякуємо за вашу участь у лотереї")
+        else alert ("Ви видмовились від участі в лотереї") 
+        }
+        else if (productPrice < buyersMoney) { alert ("У вас залишилися гроші, але їх на жаль не достатньо для купівлі лотерейного квитка")
+        }
+        else alert ("Недостатньо коштів на рахунку"); 
+    </script>
+</body>
+</html>

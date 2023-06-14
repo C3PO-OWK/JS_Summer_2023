@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3. Task 7</title>
+</head>
+<body>
+	<h1>Задача 7</h1>
+    <script>
+        //Задача 7. З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+        let monthNumber = parseInt(prompt("Введіть номер місяця, від 1 до 12",0));
+        let season;
+
+        //Розв"язок заадачі
+        switch (monthNumber) {
+            case 1:
+                season = 'Зима (Січень)'
+                break;
+            case 2:
+                season = 'Зима (Лютий)'
+                break;
+            case 3:
+                season = 'Весна (Березень)'
+                break;
+            case 4:
+                season = 'Весна (Квітень)'
+                break;
+            case 5:
+                season = 'Весна (Травень)'
+                break;
+            case 6:
+                season = 'Літо (Червень)'
+                break;
+            case 7:
+                season = 'Літо (Липень)'
+                break;
+            case 8:
+                season = 'Літо (Серпень)'
+                break;
+            case 9:
+                season = 'Осінь (Вересень)'
+                break;
+            case 10:
+                season = 'Осінь (Жовтень)'
+                break;
+            case 11:
+                season = 'Осінь (Листопад)'
+                break;
+            case 12:
+                season = 'Зима (Грудень)'
+                break;
+            default:
+                season = 'Невідомий номер місяця'
+                break;
+        }
+        alert(season)
+    </script>
+</body>
+</html>
