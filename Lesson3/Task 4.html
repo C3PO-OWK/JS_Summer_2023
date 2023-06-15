@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 3. Task 4</title>
-</head>
-<body>
-	<h1>Задача 4</h1>
+  </head>
+  <body>
+    <h1>Задача 4</h1>
     <script>
-        //Задача 4. З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
-        let userAge = parseInt(prompt("Введіть вік людини",0));
-        const CHILD = 2;
-        const SCHOOLCHILD = 6;
-        const STUDENT = 17; 
-        const WORKER = 23;
-        const PENSIONER = 60;
-        
-        //Розв"язок заадачі
-        if (userAge >=CHILD && userAge <SCHOOLCHILD) {
-            alert("Дитина у садочку")
-        } else if (userAge >=SCHOOLCHILD && userAge <STUDENT) {
-            alert("Школяр")
-        } else if (userAge >=STUDENT && userAge <WORKER) {
-            alert("Студент")
-        } else if (userAge >=WORKER && userAge <PENSIONER) {
-            alert("Працівник")
-        } else if (userAge >=PENSIONER) {
-            alert("Пенсіонер")
-        } else {
-            alert ("Немовля")
-        }
+      //Задача 4. З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+      let userAge = parseInt(prompt("Введіть вік людини", 0))
+      let result
+      //   const CHILD = 2
+      //   const SCHOOLCHILD = 6
+      //   const STUDENT = 17
+      //   const WORKER = 23
+      //   const PENSIONER = 65
+
+      //Розв"язок заадачі
+      if (userAge < 2 || userAge > 130) {
+        alert("Вік поза нашим діапазоном")
+      } else if (userAge < 6) {
+        alert("Дитина у садочку")
+      } else if (userAge < 17) {
+        alert("Школяр")
+      } else if (userAge < 23) {
+        alert("Студент")
+      } else if (userAge < 65) {
+        alert("Працівник")
+      } else alert("Пенсіонер")
     </script>
-</body>
+  </body>
 </html>
